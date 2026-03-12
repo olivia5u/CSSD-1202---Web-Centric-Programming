@@ -96,3 +96,9 @@ padding: 10px;
 border: 2px outset #111111;
 }
 
+.tagline {
+    font-size: 1rem; 
+    font-weight: normal;
+    color: rgb(98, 64, 117);
+    margin-left: 10px;
+}
