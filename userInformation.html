@@ -9,13 +9,35 @@
   <div class="container">
 
   <header>
-    <h1>LifeQuest User Information</h1>
+    <h1>LifeQuest</h1>
+    <hr>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="money.html">Money</a></li>
+        <li><a href="habits.html">Habits</a></li>
+        <li><a href="productivity.html">Productivity</a></li>
+        <li><a href="achievements.html">Achievements</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="userinformation.html">User Information</a></li>
+      </ul>
+    </nav>
   </header>
   <hr>
-  <main>
-    <form action = "https://validator.w3.org/" method = "POST">
+  <section>
+  <h2 style="text-align:center"> Sign In</h2>
+  <p>
+        Sign in to your LifeQuest account to continue your personal growth journey.
+        Access your habits, track your productivity, manage your goals, and review
+        your achievements all in one place. Staying signed in allows you to keep
+        your progress organized and continue building better daily routines.
+    </p>
+    </section>
+  <main class = "form">
+    <form action = "mailto:john123@gmail.com" method = "POST" enctype="text/plain">
         <div>
-            <label for="userName">User Name </label>
+            <label for="userName">Username </label>
             <input type="text" id="userName" name="userName" placeholder="Bob">
         </div>
         <br>
