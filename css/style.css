@@ -5,13 +5,17 @@
 p {
    line-height:1.6;
 }
+.logo{
+   text-shadow: None;
+   color:#0077cc;
+}
 
 body{
    display: flex;
    flex-direction: column;
    font-family:Georgia, 'Times New Roman', Times, serif;
-   background-color:#f4f4f4;
-   color: #322236;
+   background-color:rgb(167, 228, 252);
+   color: #415aa5;
    margin:0;
 }
 
@@ -20,15 +24,16 @@ main {
 }
 
 header {
-   background: white;
+   background: #FFFFFF;
    border-bottom: 1px solid #111111;
 }
 h1, h2, h3{
-   color: #3e235f;
+   color: #FFFFFF;
+   text-shadow: 4px 2px #0077cc
 }
 
 a{
-   color:#0077cc;
+   color:#415aa5;;
 }
 nav {
    padding:10px 0;
@@ -98,6 +103,6 @@ border: 2px outset #111111;
 .tagline {
     font-size: 1rem; 
     font-weight: normal;
-    color: rgb(98, 64, 117);
+    color: #415aa5;
     margin-left: 10px;
 }
