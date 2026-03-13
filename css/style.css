@@ -9,6 +9,9 @@ p {
    text-shadow: None;
    color:#0077cc;
 }
+section{
+   background-color: #FFFFFF;
+}
 
 body{
    display: flex;
@@ -97,7 +100,7 @@ nav a:hover{
 .form {
 text-align: center;
 padding: 10px;
-border: 2px outset #111111;
+border: 2px outset #FFFFFF;
 }
 
 .tagline {
