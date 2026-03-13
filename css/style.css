@@ -1,6 +1,6 @@
 .container{
-   max-width: 9000px;
-   padding:10px;
+   max-width: 1250px;
+   margin: auto;
 }
 p {
    line-height:1.6;
@@ -11,6 +11,7 @@ p {
 }
 section{
    background-color: #FFFFFF;
+   border-radius: 8px;
 }
 
 body{
@@ -102,10 +103,45 @@ text-align: center;
 padding: 10px;
 border: 2px outset #FFFFFF;
 }
+form label{
+   display: inline-block;
+   width: 140px;
+   text-align: right;
+   margin-right: 10px;
+}
+
 
 .tagline {
     font-size: 1rem; 
     font-weight: normal;
     color: #415aa5;
     margin-left: 10px;
+}
+
+.side-section {
+   display: flex;
+   align-items: center;
+   gap: 30px;
+}
+
+.side-text {
+   flex: 1;
+}
+
+.side-image {
+   flex: 1;
+}
+
+.side-image img {
+   width: 100%;
+   height: auto;
+   border-radius: 8px;
+}
+form input{
+   padding:8px;
+   border:1px solid #ccc;
+   border-radius:4px;
+}
+form div{
+   margin-bottom: 12px;
 }
