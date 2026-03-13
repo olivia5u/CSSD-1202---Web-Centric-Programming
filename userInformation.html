@@ -1,75 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LifeQuest | User Information</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
   <div class="container">
 
-  <header>
-     <h1 class="logo">LifeQuest <span class="tagline">    Level Up Your Life</span> </h1>
-    
-    <hr>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="money.html">Money</a></li>
-        <li><a href="habits.html">Habits</a></li>
-        <li><a href="productivity.html">Productivity</a></li>
-        <li><a href="achievements.html">Achievements</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="userinformation.html">User Information</a></li>
-      </ul>
-    </nav>
-  </header>
-  <hr>
-  
-  <h2 style="text-align: center; margin: auto;"> Sign In</h2>
-  <section>
-  <p>
-        Sign in to your LifeQuest account to continue your personal growth journey.
-        Access your habits, track your productivity, manage your goals, and review
-        your achievements all in one place. Staying signed in allows you to keep
-        your progress organized and continue building better daily routines.
-    </p>
-    </section>
-  <main class = "form">
-    <form action = "mailto:john123@gmail.com" method = "POST" enctype="text/plain">
-        <div>
-            <label for="userName">Username </label>
-            <input type="text" id="userName" name="userName" placeholder="Bob">
-        <br>
-        </div>
-        <br>
-        <div>
-            <label for = "telephoneNum">Phone Number </label>
-            <input type="tel" id = "telephoneNum" name = "telephoneNum" placeholder="(###) ###-####">
-        <br>
-          </div>
-        <br>
-        <div>
-            <label for = "email">Email Address </label>
-            <input type="email" id = "email" name = "email" placeholder="name@domain.com">
-        <br>
-          </div>
-        <br>
-        <div>
-            <input type = "submit" value = "Submit">
-        </div>
-    
-    </form>
-    
-  </main>
+    <header>
+      <h1 class="logo">
+        LifeQuest <span class="tagline">Level Up Your Life</span>
+      </h1>
+
+      <hr>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="money.html">Money</a></li>
+          <li><a href="habits.html">Habits</a></li>
+          <li><a href="productivity.html">Productivity</a></li>
+          <li><a href="achievements.html">Achievements</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="userinformation.html">User Information</a></li>
+        </ul>
+      </nav>
+    </header>
 
     <hr>
 
-  <footer>
-    <p>&copy; 2026 LifeQuest</p>
-  </footer>
+    <main>
+
+      <h2 class="page-title">Sign In</h2>
+
+      <section class="card">
+        <p>
+          Sign in to your LifeQuest account to continue your personal growth journey.
+          Access your habits, track your productivity, manage your goals, and review
+          your achievements all in one place. Staying signed in allows you to keep
+          your progress organized and continue building better daily routines.
+        </p>
+      </section>
+
+      <form action="mailto:john123@gmail.com" method="POST" enctype="text/plain">
+
+        <div>
+          <label for="userName">Username</label>
+          <input type="text" id="userName" name="userName" placeholder="Bob">
+        </div>
+
+        <div>
+          <label for="telephoneNum">Phone Number</label>
+          <input type="tel" id="telephoneNum" name="telephoneNum" placeholder="(###) ###-####">
+        </div>
+
+        <div>
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="name@domain.com">
+        </div>
+
+        <div>
+          <input type="submit" value="Submit">
+        </div>
+
+      </form>
+
+    </main>
+
+    <hr>
+
+    <footer>
+      <p>&copy; 2026 LifeQuest</p>
+    </footer>
+
   </div>
-
 </body>
+
 </html>
