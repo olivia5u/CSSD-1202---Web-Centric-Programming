@@ -27,8 +27,11 @@ p{
 }
 
 h1,h2,h3{
-    color:#ffffff;
-    text-shadow:4px 2px #0077cc;
+    color: #11588a;
+    text-shadow: 4px 2px #FFFFFF;
+
+    /* color:#ffffff;
+     text-shadow:4px 2px #0077cc;*/
 }
 
 /* LOGO */
@@ -204,4 +207,7 @@ form div{
     nav ul{
         gap:10px;
     }
+}
+.feedback{
+    margin: 1px 100px 1px 265px;
 }
