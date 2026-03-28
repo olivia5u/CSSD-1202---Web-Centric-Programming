@@ -5,11 +5,10 @@ document.addEventListener("DOMContentLoaded", function () {
     const cards = document.querySelectorAll(".card");
     const navLinks = document.querySelectorAll("nav a");
     const pageTitle = document.querySelector(".page-title");
-    const body = document.body;
     const form = document.querySelector("form");
 
     //form validation
-    if (form){
+    if (form) {
         form.addEventListener("submit", function (event) {
             const username = document.getElementById("userName").value.trim();
             const phone = document.getElementById("telephoneNum").value.trim();
@@ -23,13 +22,14 @@ document.addEventListener("DOMContentLoaded", function () {
                 isValid = false;
                 errorMessage += "Username is required\n";
             }
-            if (!email.includes("@") || !email.includes(".")) {
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            if (!emailPattern.test(email)) {
                 isValid = false;
                 errorMessage += "Invalid email\n";
             }
-            
 
-            if(phone === ""){
+            if (phone === "") {
                 isValid = false;
                 errorMessage += "Phone is required\n";
             } else if (!phonePattern.test(phone)) {
@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }
             if (!isValid) {
                 event.preventDefault();
-                alert(errorMessage);
+                alert("Please fix the following:\n\n" + errorMessage);
             }
         });
     }
@@ -109,7 +109,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }, 3000);
     }
 
- 
+
     // Double click card
     cards.forEach(function (card) {
         card.addEventListener("dblclick", function () {
