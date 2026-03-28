@@ -6,6 +6,46 @@ document.addEventListener("DOMContentLoaded", function () {
     const navLinks = document.querySelectorAll("nav a");
     const pageTitle = document.querySelector(".page-title");
     const body = document.body;
+    const form = document.querySelector("form");
+
+    //form validation
+    if (form){
+        form.addEventListener("submit", function (event) {
+            const username = document.getElementById("userName").value.trim();
+            const phone = document.getElementById("telephoneNum").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const feedback = document.getElementById("feedback");
+            const phonePattern = /^\(\d{3}\) \d{3}-\d{4}$/;
+            let isValid = true;
+            let errorMessage = "";
+
+            if (username === "") {
+                isValid = false;
+                errorMessage += "Username is required\n";
+            }
+            if (!email.includes("@") || !email.includes(".")) {
+                isValid = false;
+                errorMessage += "Invalid email\n";
+            }
+            
+
+            if(phone === ""){
+                isValid = false;
+                errorMessage += "Phone is required\n";
+            } else if (!phonePattern.test(phone)) {
+                isValid = false;
+                errorMessage += "Phone must be in format (123) 456-7890\n";
+            }
+            if (feedback && feedback.value.trim() === "") {
+                isValid = false;
+                errorMessage += "Feedback cannot be empty\n";
+            }
+            if (!isValid) {
+                event.preventDefault();
+                alert(errorMessage);
+            }
+        });
+    }
 
     // Nav hover
     navLinks.forEach(function (link) {
